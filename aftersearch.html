@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+    <meta charset="utf-8">
+    <title>YHMK Health Care</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            
+            background: #eee;
+        }
+
+        .btn {
+            margin-bottom: 5px;
+        }
+
+        .grid {
+            position: relative;
+            width: 100%;
+            background: #fff;
+            color: #666666;
+            border-radius: 2px;
+            margin-bottom: 25px;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid .grid-body {
+            padding: 15px 20px 15px 20px;
+            font-size: 0.9em;
+            line-height: 1.9em;
+        }
+
+        .search table tr td.rate {
+            color: #f39c12;
+            line-height: 50px;
+        }
+
+        .search table tr:hover {
+            cursor: pointer;
+        }
+
+        .search table tr td.image {
+            width: 50px;
+        }
+
+        .search table tr td img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .search table tr td.rate {
+            color: #f39c12;
+            line-height: 50px;
+        }
+
+        .search table tr td.price {
+            font-size: 1.5em;
+            line-height: 50px;
+        }
+
+        .search #price1,
+        .search #price2 {
+            display: inline;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><img src="images.jpg" style="width:50px">Yhmk</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                       
+                        <a href="login.html" class="nav-item nav-link" style="text-decoration: underline;">login</a>
+                        <a href="#" class="nav-item nav-link">عربي</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img
+                                    src="flag-egypt.png" style="width:30px">Egypt</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item"><img src="sadi.png"
+                                        style="width:30px">Saudi-Arabia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <br>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="grid search">
+                    <div class="grid-body">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <h2 class="grid-title"><i class="fa fa-filter"></i> Filters</h2>
+                                <hr>
+
+                                <h4>Title</h4>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="icheck">Professor</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="icheck">Lecturer</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="icheck">Consultant</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="icheck">Specialist</label>
+                                </div>
+
+                                <div class="padding"></div>
+
+                                <h4>Gender</h4>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="icheck">Male</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" class="icheck">Female</label>
+                                </div>
+                                <div class="padding"></div>
+
+                                <h4>By price:</h4>
+                                <div class="checkbox">
+                                    <label><input type="radio" id="yara" name="fav_language" value="yara"
+                                            class="icheck">less than 50 </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="radio" id="html" name="fav_language" value="HTML"
+                                            class="icheck">From 50 to 100</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="radio" id="css" name="fav_language" value="CSS"
+                                            class="icheck">From 100 to 200</label>
+                                </div>
+                                <div class="padding"></div>
+
+
+                            </div>
+
+
+                            <div class="col-md-9">
+                                <h2><i class="fa fa-file-o"></i> Result</h2>
+                                <hr>
+
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button"><i
+                                                class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+
+
+                                <div class="padding"></div>
+                                <div class="row">
+                                    <div class="nav-item dropdown" style="background-color: rgb(255, 255, 255);  ">
+                                        <a href="#" class="nav-link dropdown-toggle "
+                                            data-bs-toggle="dropdown" style="font-size: larger;">Sort by </a>
+                                        <div class="dropdown-menu m-0">
+                                           
+                                                <a href="#"  class="dropdown-item">Best match</a>
+                                                <a href="#"  class="dropdown-item">Top rating</a>
+                                                <a href="#"  class="dropdown-item">Price low to high</a>
+                                                <a href="#"  class="dropdown-item">Price highto low </a>
+
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+                                            <tr >
+                                                <td class="number text-center"></td>
+                                                <td class="image">
+                                                    <a href="doctor.html"><img
+                                                        src="assets/img/doctors/doctors-1.jpg" alt=""></a></td>
+                                                <td class="product"><a href="doctor.html"><strong>Doctor Name</strong></a><br>Doctor information</td>
+                                                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                            class="fa fa-star"></i><i
+                                                            class="fa fa-star-half-o"></i></span></td>
+                                                <td class="price text-right"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white shadow-sm">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-primary"><img src="images.jpg" style="width:50px">Yhmk</h1>
+                        <h3>All your healthcare needs</h3>
+                        <h6> Search and book a clinic visit,home visit,<br>
+                            or a teleconsultation.Order your medicine<br>
+                            and book a service or operation.</h6>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Popular Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Follow Us</h4>
+
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

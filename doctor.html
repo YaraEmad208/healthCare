@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+    <meta charset="utf-8">
+    <title>YHMK Health Care</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .idance .classes-details ul.timetable {
+            margin: 0 0 22px;
+            padding: 0;
+        }
+
+        .idance .classes-details ul.timetable li {
+            list-style: none;
+            font-size: 15px;
+            color: #7f7f7f;
+        }
+
+        .idance .timetable {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .idance .timetable-item {
+            border: 1px solid #d8e3eb;
+            padding: 15px;
+            margin-top: 20px;
+            position: relative;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .idance .timetable-item {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+        }
+
+        .idance .timetable-item-img {
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+
+        .idance .timetable-item-img img {
+            height: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .idance .timetable-item-img {
+                display: block;
+            }
+        }
+
+        .idance .timetable-item-main {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            position: relative;
+            margin-top: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .idance .timetable-item-main {
+                margin-top: 0;
+                padding-left: 15px;
+            }
+        }
+
+        .idance .timetable-item-time {
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .idance .timetable-item-name {
+            font-size: 14px;
+            margin-bottom: 19px;
+        }
+
+        .idance .btn-book {
+            padding: 6px 30px;
+            width: 100%;
+        }
+
+        .idance .timetable-item-like {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .idance .timetable-item-like .fa-heart-o {
+            display: block;
+            color: #b7b7b7;
+        }
+
+        .idance .timetable-item-like .fa-heart {
+            display: none;
+            color: #f15465;
+        }
+
+        .idance .timetable-item-like:hover .fa-heart {
+            display: block;
+        }
+
+        .idance .timetable-item-like:hover .fa-heart-o {
+            display: none;
+        }
+
+        .idance .timetable-item-like-count {
+            font-size: 12px;
+            text-align: center;
+            padding-top: 5px;
+            color: #7f7f7f;
+        }
+
+        .idance .timetable-item-book {
+            width: 200px;
+        }
+
+        .idance .timetable-item-book .btn {
+            width: 100%;
+        }
+
+        .idance .schedule .nav-tabs {
+            border-bottom: 2px solid #104455;
+        }
+
+        .idance .schedule .nav-link {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            font-size: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #3d3d3d;
+            font-weight: 500;
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none;
+            border-radius: 2px 2px 0 0;
+            padding-left: 0;
+            padding-right: 0;
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .idance .schedule .nav-link {
+                font-size: 16px;
+            }
+        }
+
+        .idance .schedule .nav-link.active {
+            background: #104455;
+            border-color: #104455;
+            color: #fff;
+        }
+
+        .idance .schedule .nav-link.active:focus {
+            border-color: #104455;
+        }
+
+        .idance .schedule .nav-link:hover:not(.active) {
+            background: #46c1be;
+            border-color: #46c1be;
+            color: #fff;
+        }
+
+        .idance .schedule .tab-pane {
+            padding-top: 10px;
+        }
+        .card-style1 {
+    box-shadow: 0px 0px 10px 0px rgb(89 75 128 / 9%);
+}
+
+.blog-comment .post-comments{
+	border: 1px solid #eee;
+    margin-bottom: 20px;
+    margin-left: 85px;
+	margin-right: 0px;
+    padding: 10px 20px;
+    position: relative;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+       	 -o-border-radius: 4px;
+    		border-radius: 4px;
+	background: #fff;
+	color: #6b6e80;
+	position: relative;
+}
+
+.blog-comment .meta {
+	font-size: 13px;
+	color: #aaaaaa;
+	padding-bottom: 8px;
+	margin-bottom: 10px !important;
+	border-bottom: 1px solid #eee;
+}
+
+.blog-comment ul.comments ul{
+	list-style-type: none;
+	padding: 0;
+	margin-left: 85px;
+}
+
+.blog-comment-form{
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 40px;
+}
+
+.blog-comment h3,
+.blog-comment-form h3{
+	margin-bottom: 40px;
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: 800;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><img src="images.jpg" style="width:50px">Yhmk</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                       
+                        <a href="login.html" class="nav-item nav-link" style="text-decoration: underline;">login</a>
+                        <a href="#" class="nav-item nav-link">عربي</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><img
+                                    src="flag-egypt.png" style="width:30px">Egypt</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item"><img src="sadi.png"
+                                        style="width:30px">Saudi-Arabia</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    
+    <section class="bg-light">
+     <br>
+    <br>
+    
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12 mb-4 mb-sm-5">
+                    <div class="card card-style1 border-0">
+                        <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                            <div class="team-item">
+                                <div class="row g-0 bg-light rounded overflow-hidden">
+                                    <div class="col-12 col-sm-5 h-100">
+                                        <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                                    </div>
+                                    <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                                        <div class="mt-auto p-4">
+                                            <h3>Doctor Name</h3>
+                                            <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                            <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum
+                                                dolor</p>
+                                                <span><i class="fa fa-star"></i><i
+                                                    class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                    class="fa fa-star"></i><i
+                                                    class="fa fa-star-half-o"></i></span>
+                                        </div>
+                                        <div class="d-flex mt-auto border-top p-4">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container bootstrap snippets bootdey">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="blog-comment">
+                                         
+                                            <hr/>
+                                            <ul class="comments">
+                                            <li class="clearfix">
+                                             
+                                              <div class="post-comments">
+                                                  <p class="meta">Dec 18, 2014 <a href="#">JohnDoe</a> says : <i class="fa fa-star pull-right"></i><i
+                                                    class="fa fa-star pull-right"></i><i class="fa fa-star pull-right"></i><i
+                                                    class="fa fa-star pull-right"></i><i
+                                                    class="fa fa-star pull-right"></i></p>
+                                                  <p>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                      Etiam a sapien odio, sit amet
+                                                  </p>
+                                              </div>
+                                            </li>
+                                            <li class="clearfix">
+                                             
+                                              <div class="post-comments">
+                                                  <p class="meta">Dec 19, 2014 <a href="#">JohnDoe</a> says : <i class="fa fa-star pull-right"></i><i
+                                                    class="fa fa-star pull-right"></i><i class="fa fa-star pull-right"></i><i
+                                                    class="fa fa-star pull-right"></i><i
+                                                    class="fa fa-star-half-o pull-right"></i></p>
+                                                  <p>
+                                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                      Etiam a sapien odio, sit amet
+                                                  </p>
+                                              </div>
+                                            
+                                             
+                                            </li>
+                                            <div class="d-flex mt-auto border-top p-4" >
+                                                <a class="btn btn-lg btn-primary btn-xlg-square " href="contact.html">
+                                                    <p>Add Review</p>
+                                                </a>
+                            
+                                            </div>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    
+        <div class="idance">
+            <div class="schedule content-block ">
+                <div class="container">
+                    <h2 data-aos="zoom-in-up" class="aos-init aos-animate">Schedule</h2>
+
+                    <div class="timetable">
+
+                        <!-- Schedule Top Navigation -->
+                        <nav class="nav nav-tabs">
+                            <a class="nav-link active">Sun</a>
+                            <a class="nav-link ">Mon</a>
+                            <a class="nav-link">Tue</a>
+                            <a class="nav-link">Wed</a>
+                            <a class="nav-link">Thu</a>
+                            <a class="nav-link">Fri</a>
+                            <a class="nav-link">Sat</a>
+                            
+                        </nav>
+
+                        <div class="tab-content">
+                            <div class="tab-pane show active">
+                                <div class="row">
+
+                                    <!-- Schedule Item 1 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">4:00pm - 4:30pm</div>
+                                                <div class="timetable-item-name">Contemporary Dance</div>
+                                                <a href="appointment.html" class="btn btn-primary btn-book">Book</a>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Schedule Item 2 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">4:30pm - 5:00pm</div>
+                                                <div class="timetable-item-name">Contemporary Dance</div>
+                                                <a href="appointment.html" class="btn btn-primary btn-book">Book</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Schedule Item 3 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                           
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">5:00pm - 5:30pm</div>
+                                                <div class="timetable-item-name">Street Dance</div>
+                                                <a href="appointment.html" class="btn btn-primary btn-book">Book</a>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Schedule Item 4 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                           
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">5:30pm - 6:00pm</div>
+                                                <div class="timetable-item-name">Yoga</div>
+                                                <a href="appointment.html" class="btn btn-primary btn-book">Book</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Schedule Item 5 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">6:00pm - 6:30pm</div>
+                                                <div class="timetable-item-name">Stretching</div>
+                                                <a href="appointment.html" class="btn btn-primary btn-book">Book</a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Schedule Item 6 -->
+                                    <div class="col-md-6">
+                                        <div class="timetable-item">
+                                            
+                                            <div class="timetable-item-main">
+                                                <div class="timetable-item-time">6:30pm - 7:00pm</div>
+                                                <div class="timetable-item-name">Street Dance</div>
+                                                <a href="appointment.html" class="btn btn-primary btn-book">Book</a>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white shadow-sm">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-primary"><img src="images.jpg" style="width:50px">Yhmk</h1>
+                        <h3>All your healthcare needs</h3>
+                        <h6> Search and book a clinic visit,home visit,<br>
+                            or a teleconsultation.Order your medicine<br>
+                            and book a service or operation.</h6>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Quick Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Popular Links</h4>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class=" mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <a class="mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+                        Follow Us</h4>
+
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
